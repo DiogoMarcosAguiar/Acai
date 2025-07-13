@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Açaí da Esquina</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('./açainocopo01.jpg') no-repeat center;
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .cardapio {
+      background: rgba(255,255,255,0.08);
+      border: 2px solid #fff;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 600px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .cardapio h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffe600;
+      text-shadow: 1px 1px 2px #000;
+      font-size: 1.6em;
+    }
+
+    .cardapio ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cardapio li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .secao {
+      margin-top: 30px;
+    }
+
+    .acompanhamentos, .frutas {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .acompanhamentos ul, .frutas ul {
+      columns: 2;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .cardapio {
+        padding: 15px;
+      }
+
+      .cardapio h2 {
+        font-size: 1.4em;
+      }
+
+      .cardapio li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+
+      .acompanhamentos ul, .frutas ul {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./AcaidaesquinaLOGO.png" alt="Logo Açaí da Esquina">
+  </header>
+
+  <main>
+    <section class="cardapio">
+      <h2>Cardápio Açaí & Cupuaçu</h2>
+      <ul>
+        <li><span>Copo de 200ml</span><span>R$ 5,00</span></li>
+        <li><span>Copo de 300ml</span><span>R$ 7,00</span></li>
+        <li><span>Copo de 500ml</span><span>R$ 10,00</span></li>
+        <li><span>Copo de 700ml</span><span>R$ 12,00</span></li>
+      </ul>
+    </section>
+
+    <section class="cardapio secao acompanhamentos">
+      <h2>Acompanhamentos (escolha até 3)</h2>
+      <ul>
+        <li>Granola</li>
+        <li>Paçoca</li>
+        <li>Amendoim</li>
+        <li>Leite Condensado</li>
+        <li>M&Ms</li>
+        <li>Leite Ninho</li>
+      </ul>
+    </section>
+
+    <section class="cardapio secao frutas">
+      <h2>Frutas</h2>
+      <ul>
+        <li>Morango</li>
+        <li>Kiwi</li>
+        <li>Uva</li>
+        <li>Banana</li>
+        <li>Manga</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Açaí da Esquina. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
